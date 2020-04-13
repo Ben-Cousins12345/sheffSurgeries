@@ -2,8 +2,9 @@ package com.bcousins
 
 class Appointment {
 
+	int appID
 	Date appDate
-	Date appTime
+	String appTime
 	int appDuration
 	String roomNumber
 
