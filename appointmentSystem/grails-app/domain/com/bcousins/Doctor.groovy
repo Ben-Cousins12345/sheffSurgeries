@@ -11,6 +11,9 @@ class Doctor {
 	String doctorPhone
 	String bio
 
+	static hasMany=[prescriptions:Prescription]
+	
+
     static constraints = {
 
 	fullName nullable: false, blank: false

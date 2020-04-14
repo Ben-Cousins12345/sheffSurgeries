@@ -1,6 +1,7 @@
 package com.bcousins
 
 class Prescription {
+	static belongsTo = Doctor
 
 	String pharmacyName
 	int prescriptionNumber
@@ -8,6 +9,13 @@ class Prescription {
 	float totalCost
 	Date dateIssued
 	Boolean patientPaying
+
+	
+	
+	String toString(){
+	return prescriptionNumber
+	}
+
 
     static constraints = {
 

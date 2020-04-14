@@ -46,7 +46,7 @@ class BootStrap {
 	password: 'password',
 	doctorOffice: '5',
 	doctorPhone: '01142678894',
-	bio: 'Lorem ipsum dolor sit amet', ).save()
+	bio: 'Lorem ipsum dolor sit amet' ).save()
 
 	def doc2=new Doctor(
 	fullName: 'Frank Collett',
@@ -56,7 +56,7 @@ class BootStrap {
 	password: 'password',
 	doctorOffice: '5',
 	doctorPhone: '01142674527',
-	bio: 'Lorem ipsum dolor sit amet', ).save()
+	bio: 'Lorem ipsum dolor sit amet' ).save()
 
 	
 	def pat1=new Patient(
@@ -66,7 +66,8 @@ class BootStrap {
 	patientDob: new Date('26/1/1969'),
 	patientID: 'A113',
 	dateRegistered: new Date('06/5/2014'),
-	patientPhone: '01142285946' ).save()
+	patientPhone: '01142285946',
+	appID: app1 ).save()
 
 	def pat2=new Patient(
 	patientName: 'Howard Collett ',
@@ -75,7 +76,9 @@ class BootStrap {
 	patientDob: new Date('07/3/2000'),
 	patientID: 'A255',
 	dateRegistered: new Date('21/2/2001'),
-	patientPhone: '01142938046' ).save()
+	patientPhone: '01142938046',
+	appID: app2 ).save()
+
 
 	def Rec1=new Receptionist(
 	recepName: 'Josh Oneil',
@@ -123,6 +126,8 @@ class BootStrap {
 	patientPaying: 'true').save()
 
 
+	doc1.addToPrescriptions(Pre1)
+	
 
     }
     def destroy = {

@@ -2,11 +2,14 @@ package com.bcousins
 
 class Appointment {
 
-	int appID
-	Date appDate
-	String appTime
-	int appDuration
-	String roomNumber
+	int appID;
+	Date appDate;
+	String appTime;
+	int appDuration;
+	String roomNumber;
+	String toString(){
+	return appID
+	}
 
     static constraints = {
 
