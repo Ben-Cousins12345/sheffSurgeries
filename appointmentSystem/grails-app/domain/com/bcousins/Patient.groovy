@@ -9,7 +9,7 @@ class Patient {
 	String patientID
 	Date dateRegistered
 	String patientPhone
-	int appID
+	Appointment appID
 
     static constraints = {
 

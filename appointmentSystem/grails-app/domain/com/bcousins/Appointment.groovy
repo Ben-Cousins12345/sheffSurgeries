@@ -8,6 +8,10 @@ class Appointment {
 	int appDuration
 	String roomNumber
 
+	String toString(){
+	return appID
+	}
+
     static constraints = {
 
 	appDate nullable: false, blank: false
