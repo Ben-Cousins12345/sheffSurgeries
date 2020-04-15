@@ -24,21 +24,21 @@ class BootStrap {
 	openingTime: '08:00-17:00' ).save()
 	
 
-	def app1=new Appointment(
+	def App1=new Appointment(
 	appID: '5',
 	appDate:new Date('22/5/2020'),
 	appTime: '2:30pm',
 	appDuration: '30',
 	roomNumber: '5' ).save()
 
-	def app2=new Appointment(
+	def App2=new Appointment(
 	appID: '7',
 	appDate:new Date('23/5/2020'),
 	appTime: '10:00am',
 	appDuration: '60',
 	roomNumber: '3' ).save()
 
-	def doc1=new Doctor(
+	def Doc1=new Doctor(
 	fullName: 'Hibert Fell',
 	qualification: 'MBChB(Sheffield)',
 	position: 'GP, Surgeon',
@@ -48,18 +48,18 @@ class BootStrap {
 	doctorPhone: '01142678894',
 	bio: 'Lorem ipsum dolor sit amet', ).save()
 
-	def doc2=new Doctor(
+	def Doc2=new Doctor(
 	fullName: 'Frank Collett',
 	qualification: 'MBChB(Sheffield)',
 	position: 'GP, Surgeon',
-	doctorEmail: 'hibert@gmail.com',
+	doctorEmail: 'Frank@gmail.com',
 	password: 'password',
 	doctorOffice: '5',
 	doctorPhone: '01142674527',
 	bio: 'Lorem ipsum dolor sit amet', ).save()
 
 	
-	def pat1=new Patient(
+	def Pat1=new Patient(
 	patientName: 'Mark Sting',
 	patientAddress: '123 Fake Street',
 	patientResidence: 'Sheffield',
@@ -67,9 +67,9 @@ class BootStrap {
 	patientID: 'A113',
 	dateRegistered: new Date('06/5/2014'),
 	patientPhone: '01142285946',
-	appID: app1 ).save()
+	appID: App1 ).save()
 
-	def pat2=new Patient(
+	def Pat2=new Patient(
 	patientName: 'Howard Collett ',
 	patientAddress: '53 Greenhill Avenue',
 	patientResidence: 'Sheffield',
@@ -77,7 +77,7 @@ class BootStrap {
 	patientID: 'A255',
 	dateRegistered: new Date('21/2/2001'),
 	patientPhone: '01142938046',
-	appID: app2 ).save()
+	appID: App2 ).save()
 
 	def Rec1=new Receptionist(
 	recepName: 'Josh Oneil',
@@ -114,7 +114,8 @@ class BootStrap {
 	medicine: 'Ibeprophen',
 	totalCost: '15.00',
 	dateIssued: new Date('29/12/2019'), 
-	patientPaying: 'true').save()
+	patientPaying: 'true',
+	doctor:Doc2).save()
 
 	def Pre2=new Prescription(
 	pharmacyName: 'Greenhill Chemist',
@@ -122,8 +123,10 @@ class BootStrap {
 	medicine: 'Paracetomol',
 	totalCost: '10.00',
 	dateIssued: new Date('24/2/2020'), 
-	patientPaying: 'true').save()
+	patientPaying: 'true',
+	doctor:Doc2).save()
 
+	
 
 
     }

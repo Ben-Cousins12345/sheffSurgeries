@@ -2,13 +2,17 @@ package com.bcousins
 
 class Prescription {
 
-	String pharmacyName
-	int prescriptionNumber
-	String medicine
-	float totalCost
-	Date dateIssued
-	Boolean patientPaying
+	String pharmacyName;
+	int prescriptionNumber;
+	String medicine;
+	float totalCost;
+	Date dateIssued;
+	Boolean patientPaying;
+	Doctor doctor;
 
+	String toString(){
+	return prescriptionNumber
+	}
     static constraints = {
 
 	pharmacyName nullable: false, blank: false
