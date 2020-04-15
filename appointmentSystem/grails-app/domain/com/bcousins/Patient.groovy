@@ -2,14 +2,21 @@ package com.bcousins
 
 class Patient {
 
-	String patientName
-	String patientAddress
-	String patientResidence
-	Date patientDob
-	String patientID
-	Date dateRegistered
-	String patientPhone
-	Appointment appID
+	String patientName;
+	String patientAddress;
+	String patientResidence;
+	Date patientDob;
+	String patientID;
+	Date dateRegistered;
+	String patientPhone;
+	Appointment appID;
+
+
+	static hasMany=[prescriptions:Prescription]
+	
+	String toString(){
+	return patientName
+	}
 
     static constraints = {
 

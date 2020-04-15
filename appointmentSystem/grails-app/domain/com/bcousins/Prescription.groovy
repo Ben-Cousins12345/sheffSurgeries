@@ -9,6 +9,8 @@ class Prescription {
 	Date dateIssued;
 	Boolean patientPaying;
 	Doctor doctor;
+	Patient patient;
+	
 
 	String toString(){
 	return prescriptionNumber

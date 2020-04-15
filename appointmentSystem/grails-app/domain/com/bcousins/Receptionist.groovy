@@ -2,11 +2,16 @@ package com.bcousins
 
 class Receptionist {
 
-	String recepName
-	String recepEmail
-	String recepUsername
-	String recepPassword
-	String recepPhone
+	String recepName;
+	String recepEmail;
+	String recepUsername;
+	String recepPassword;
+	String recepPhone;
+	Surgery surgery;
+
+	String toString(){
+	return recepName
+	}
 
     static constraints = {
 

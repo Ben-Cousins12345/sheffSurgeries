@@ -2,11 +2,16 @@ package com.bcousins
 
 class Nurse {
 
-	String nurseName
-	String qualifications
-	String nurseEmail
-	String nurseOffice
-	String nursePhone
+	String nurseName;
+	String qualifications;
+	String nurseEmail;
+	String nurseOffice;
+	String nursePhone;
+	Surgery surgery;
+
+	String toString(){
+	return nurseName
+	}
 
     static constraints = {
 
