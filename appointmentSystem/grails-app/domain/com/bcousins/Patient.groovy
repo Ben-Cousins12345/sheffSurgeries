@@ -12,7 +12,8 @@ class Patient {
 	Appointment appID;
 
 
-	static hasMany=[prescriptions:Prescription]
+	static hasMany=[prescriptions:Prescription, doctors:Doctor, surgerys:Surgery]
+	static belongsTo=[Doctor, Surgery]
 	
 	String toString(){
 	return patientName

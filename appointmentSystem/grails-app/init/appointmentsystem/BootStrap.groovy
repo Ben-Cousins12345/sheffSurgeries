@@ -137,9 +137,6 @@ class BootStrap {
 	doctor:Doc2,
 	patient: Pat2 ).save()
 
-	
-
-	
 
 
     }
